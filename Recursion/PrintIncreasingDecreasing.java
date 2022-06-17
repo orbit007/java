@@ -32,3 +32,32 @@ public class Main{
         printnum2(n-1);
     }
 }
+
+
+// other mth
+
+
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args)
+    {
+        Scanner scn= new Scanner(System.in);
+        int n=scn.nextInt();
+        int x=1;
+        prints(n,x);
+
+    }
+
+    public static void prints(int n,int x)
+    {
+        if(x>n)
+        {
+            return;
+        }
+
+        System.out.println(x);
+        prints(n,x+1);
+        System.out.println(x);
+    }
+}
