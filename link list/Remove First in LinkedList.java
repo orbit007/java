@@ -64,6 +64,7 @@ public class Main{
         li.addLast(40);
         
         li.rem();
+        li.rem();
         li.display();
   }
 }
