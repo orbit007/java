@@ -65,6 +65,7 @@ public class Main{
         
         li.rem();
         li.rem();
+        
         li.display();
   }
 }
