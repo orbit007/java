@@ -122,15 +122,24 @@ public class Main {
     public void removeLast(){
       
       Node x=this.head;
-
-      for(int i=1;i<this.size-1;i++)
+      if(this.size==1)
       {
-          x=x.next;
+        this.head=null;
+        this.tail=null;
+      }
+      else
+      {
+        for(int i=1;i<this.size-1;i++)
+        {
+            x=x.next;
+        }
+
+        this.tail=x;
+        this.tail.next=null;
+        this.size--;
       }
 
-      this.tail=x;
-      this.tail.next=null;
-      this.size--;
+      
     }
   }
 
