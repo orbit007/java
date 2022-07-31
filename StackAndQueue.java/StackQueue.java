@@ -6,7 +6,9 @@ public class Main{
 
   public static void QueueIntro()
   {
+
     Queue<Integer> queue=new ArrayDeque<>();
+    
     System.out.println(queue);
     queue.add(10);
     System.out.println(queue.size()+"  "+queue);
@@ -31,7 +33,9 @@ public class Main{
   }
   public static void main(String args[])
   {
+
     Stack<Integer> st=new Stack<Integer>();
+
     System.out.println(st);
     st.push(10);
     System.out.println(st.size()+"  "+st);
